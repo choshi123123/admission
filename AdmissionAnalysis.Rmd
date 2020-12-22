@@ -138,8 +138,7 @@ Figure 1 shows a correlation plot that visualizes the correlation between all va
 
 ```{r correlation, echo=FALSE, warning=FALSE, error=FALSE,out.height="70%", out.width="70%"}
 # construct a correlation plot to check the relationship between different predictors
-# Since there are 5 categories of University Rating
-# We will construct 5 correlation plots
+# We will construct correlation plot to represent that
 num.cols <- sapply(data, is.numeric)
 cors <- cor(data[, num.cols])
 corrplot(cors, title = "Figure 1: Correlation plot", mar=c(1,0,2,0))
